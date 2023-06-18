@@ -202,7 +202,7 @@ float readCurrent(){
   int PortPin = 34;
   float currentValue;
   uint8_t readValue = analogRead(PortPin);
-  currentValue = (float) readValue*(3.3/4095);
+  currentValue = (float) readValue*(3.3/4096);
   return currentValue;
 }
 
@@ -210,7 +210,7 @@ float readVoltage(){
   int PortPin = 35;
   float voltageValue;
   uint8_t readValue = analogRead(PortPin);
-  voltageValue = (float) readValue*(3.3/4095);
+  voltageValue = (float) readValue*(3.3/4096);
   return voltageValue;
 }
 
